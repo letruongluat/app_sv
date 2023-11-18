@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sua" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Sua">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FDD835"
+                android:backgroundTint="#FFB300"
+                android:orientation="vertical"
+                tools:context=".QuanLy_SV">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+
+                    <Button
+                        android:id="@+id/btnTC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB300"
+                        android:text="Trang Chủ"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnEM"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB300"
+                        android:text="Email"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnTK"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB300"
+                        android:text="Tìm Kiếm"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnDX"
+                        android:layout_width="137dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB300"
+                        android:text="Đăng Xuất"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00897B"
+                    android:text="THÊM SINH VIÊN"
+                    android:textAlignment="center"
+                    android:textColor="#002E89"
+                    android:textColorHighlight="#FDD835"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="175dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="84dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="Họ Tên:"
+                        android:textColor="#00897B"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/edtHT2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtHT2"
+                        android:layout_width="592dp"
+                        android:layout_height="66dp"
+                        android:layout_marginStart="208dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="147dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="176dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_weight="1"
+                        android:text="Ngày Sinh:"
+                        android:textColor="#00897B"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/edtNS1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtNS1"
+                        android:layout_width="588dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="212dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtHT2" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="118dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="292dp"
+                        android:layout_weight="1"
+                        android:text="Số CCCD:"
+                        android:textColor="#00897B"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtCCCD1"
+                        android:layout_width="590dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="212dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtNS1" />
+
+                    <TextView
+
+                        android:layout_width="103dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="432dp"
+                        android:layout_weight="1"
+                        android:text="Quê Quán:"
+                        android:textColor="#00897B"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtQQ1"
+                        android:layout_width="586dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="212dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtCCCD1" />
+
+                    <Button
+                        android:id="@+id/btnT2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:backgroundTint="#7CB342"
+                        android:text="Sửa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtQQ1"
+                        app:layout_constraintVertical_bias="0.115" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
